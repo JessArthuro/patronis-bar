@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@100;300;400;500;600&family=Satisfy&display=swap');
+
+:root {
+    --black: #0c0d0f;
+    --black-light: #191B1F;
+    --white: #fff;
+    --light: rgba(240, 243, 247, .9);
+    --gray: #787d83;
+    --red: #ec1839;
+}
+
+* {
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none !important;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: .5px;
+    transition: 0.2s linear;
+}
+
+body {
+    background: var(--black);
+    color: var(--white);
+}
+
+.button {
+    background: var(--black-light);
+    border: 2px solid var(--white);
+    color: var(--white);
+    padding: 8px 15px;
+    border-radius: 5px;
+    letter-spacing: .6px;
+
+    &:hover {
+        background: var(--white);
+        color: var(--black);
+    }
+}
+
+
+@import "./header";
+@import "./home";
+@import "./category";
+@import "./about";
+@import "./popular";
+@import "./banner";
+@import "./menu";
+@import "./reviews";
+@import "./reservation";
+@import "./footer";
+
+
+
+
+// ----- media queries -----
+@media (min-width:992px) and (max-width:1199px) {
+    .menu .menu-content .box {
+        .col-lg-7 {
+            width: 68%;
+        }
+        .col-lg-5 {
+            width: 32%;
+        }
+    }
+}
+
+
+@media (max-width:767px) {
+    .home {
+        .home-info {
+            height: 45vh;
+            h1 {
+                font-size: 34px;
+            }
+        }
+        .home-slider {
+            height: 45vh;
+            padding-top: 60px;
+        }
+    }
+
+    .banner {
+        .banner-background .content p {
+            font-size: 10px;
+        }
+
+        .promos-content {
+            .promo-one, .promo-three {
+                .content {
+                    text-align: center !important;
+                    width: 100% !important;
+                }
+                p {
+                    text-align: center !important;
+                    width: 100% !important;
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width:575px) {
+    .header #menu-btn {
+        display: inline-block;
+    }
+
+    .header .navbar {
+        position: absolute;
+        top: 100px; left: -110%;
+        background: var(--black);
+        width: 100%;
+        height: 85%;
+        border-top: 2px solid var(--gray);
+        border-bottom: 2px solid var(--gray);
+
+        &.active {
+            left: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 40px;
+            justify-content: center;
+
+            a {
+                font-size: 30px;
+                border-bottom: 2px solid var(--gray);
+            }
+        }
+    }
+
+
+    .col-xs-6l {
+        width: 50%;
+        float: left;
+    }
+
+    .col-xs-6r {
+        width: 50%;
+        float: right;
+    }
+
+    .col-xs-5l {
+        width: 40%;
+        float: left;
+    }
+
+    .col-xs-7r {
+        width: 60%;
+        float: right;
+    }
+
+    .banner .banner-background .content h2 {
+        font-size: 55px;
+    }
+
+    .menu .menu-categories a {
+        padding: 10px;
+    }
+}

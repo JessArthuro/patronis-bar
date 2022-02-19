@@ -1,0 +1,57 @@
+.reservation {
+    margin-bottom: 100px;
+
+    .titles {
+        text-align: center;
+
+        h1 {
+            padding-top: 30px;
+        }
+
+        h2 {
+            font-family: 'Satisfy', cursive;
+            color: var(--red);
+            margin-bottom: 20px;
+        }
+    }
+
+    .reservation-content {
+        .form-reservation {
+            input, textarea {
+                font-family: 'Poppins', sans-serif; 
+                font-size: 14px;
+                background: var(--black-light);
+                border: none;
+                color: var(--light);
+
+                &::placeholder {
+                    color: var(--gray);
+                }
+            }
+
+            textarea {
+                resize: none;
+            }
+
+            .input-content {
+                position: relative;
+
+                i {
+                    position: absolute;
+                    top: 8px; right: 20px;
+                    font-size: 15px;
+                    color: var(--gray);
+                }
+            }
+        }
+
+        .ubication {
+            .map {
+                width: 100%;
+                height: 100%;
+                border-radius: 5px;
+                filter: brightness(.9);
+            }
+        }
+    }
+}

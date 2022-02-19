@@ -1,0 +1,32 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 5%;
+
+    .logo {
+        img {
+            height: 80px;
+        }
+    }
+
+    .navbar {
+        a {
+            padding: 0 10px;
+            font-size: 20px;
+            color: var(--gray);
+
+            &:hover {
+                color: var(--white);
+            }
+        }
+    }
+
+    #menu-btn {
+        background: var(--black-light);
+        padding: 10px;
+        border: 2px solid var(--gray);
+        border-radius: 5px;
+        display: none;
+    }
+}

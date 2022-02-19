@@ -1,0 +1,26 @@
+.category {
+    margin-top: 50px;
+    margin-bottom: 100px;
+
+    .box {
+        background: var(--black-light);
+        padding: 10px;
+        border-radius: 5px;
+        text-align: center;
+
+        &:hover {
+            background: var(--gray);
+        }
+
+        img {
+            height: 60px;
+            width: 100%;
+            object-fit: contain;
+            margin-bottom: 10px;
+        }
+
+        h5 {
+            color: var(--light);
+        }
+    }
+}
